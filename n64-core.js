@@ -11,7 +11,7 @@
       this.ram = new Uint8Array(RAM_SIZE);
       this.rom = new Uint8Array(0);
       this.regs = Array(32).fill(0n);
-      this.pc = ROM_BASE;
+      this.pc = BigInt(ROM_BASE);
       this.cycles = 0;
       this.halted = false;
       this.lastError = '';
