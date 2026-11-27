@@ -50,7 +50,7 @@
 
     reset() {
       this.regs = Array(32).fill(0n);
-      this.pc = ROM_BASE;
+      this.pc = BigInt(ROM_BASE);
       this.cycles = 0;
       this.halted = false;
       this.lastError = '';
